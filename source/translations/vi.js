@@ -1,0 +1,237 @@
+export default {
+  // Bottom Navigation
+  'home-tab': 'Trang chủ',
+  'product-tab': 'Sản phẩm',
+  'noti-tab': 'Thông báo',
+  'account-tab': 'Tài khoản',
+
+  // Scan QR
+  'qr-search-info': 'Tra cứu thông tin',
+  'pls-input-code': 'Vui lòng nhập mã code',
+  'scan-qr-tab': 'Quét QR/Barcode',
+  'text-qr-tab': 'Nhập mã code',
+  '0k': 'Đã hiểu',
+  'input-product-code': 'Nhập mã của sản phẩm',
+  'input-code': 'Nhập mã',
+  'move-cam-to-qr': 'Di chuyển camera đến vùng có chứa mã QR hoặc mã vạch',
+  'look-up': 'Tra cứu',
+
+  // Sign In
+  'sign-in': 'Đăng nhập',
+  'sign-up': 'Đăng kí',
+  'user-name': 'Tên tài khoản',
+  'pass-wd': 'Nhập mật khẩu',
+  'remember-me': 'Ghi nhớ tài khoản',
+  'forgot-passwd': 'Quên mật khẩu',
+  'dont-have-acc': 'Bạn chưa có tài khoản ?',
+  'back-to-home': 'Trở về trang chủ',
+
+  // Reset password
+  'reset-passwd': 'Đặt lại mật khẩu',
+  'input-usr-to-reset': 'Nhập tên tài khoản để đặt lại mật khẩu',
+  'reset-message-prefix': 'Chúng tôi đã gửi mã đặt lại mật khẩu qua ',
+  'reset-message-suffix': '. Nhập vào bên dưới để đặt lại mật khẩu của bạn',
+  'enter-reset-code': 'Nhập mã code',
+  'new-passwd': 'Nhập mật khẩu mới',
+  're-enter-new-passwd': 'Nhập lại mật khẩu mới',
+  'change-passwd': 'Thay đổi mật khẩu',
+  'change-pass-suc': 'Thay đổi mật khẩu thành công',
+  'old-pass': 'Mật khẩu cũ',
+  'enter-old-pass': 'Nhập lại mật khẩu cũ',
+  'new-pass': 'Mật khẩu mới',
+  'enter-new-pass': 'Nhập mật khẩu mới',
+  'new-pass-2': 'Xác nhận mật khẩu mới',
+  'enter-new-pass-2': 'Nhập lại mật khẩu mới',
+
+  // Sign Up
+  email: 'Email',
+  'input-email': 'Nhập email ',
+  'verify-acc': 'Xác thực tài khoản',
+  'verify-message-prefix': 'Chúng tôi đã gửi mã xác thực về email ',
+  'verify-message-suffix': 'nhập mã xác thực để xác thực tài khoản',
+  'input-verify-code': 'Nhập mã xác thực',
+  'v-erify': 'Xác thực tài khoản',
+  'already-have-acc': 'Bạn đã có tài khoản?',
+  'r-esend': 'Gửi lại',
+  'dont-recieve-code': 'Bạn chưa nhận được mã?',
+
+  // Error message
+  'error': 'Lỗi',
+  'fail-to-send-comment':'Gửi bình luận thất bại',
+  'not-get-banner': 'Không lấy được dữ liệu banner',
+  'activate-permission': 'Vui lòng kích hoạt quyền sử dụng Thư viện để tải ảnh đại diện lên',
+  'get-info-error': 'Đã xảy ra lỗi khi truy xuất thông tin tài khoản',
+  'get-info-product-fail': 'Không tìm thấy thông tin sản phẩm',
+  'no-new-product': 'Không lấy được danh sách sản phẩm mới',
+  'account-deleted': 'Tài khoản này đã bị xoá',
+  'un-known-error': 'Có lỗi xảy ra vui lòng thử lại',
+  'lack-info-error': 'Vui lòng điền đầy đủ thông tin.',
+  'lack-impotant-data': 'Vui lòng nhập đầy đủ các trường dữ liệu có dấu (*)',
+  'usr-exists': 'Tên tài khoản đã tồn tại',
+  'wrong-passwd': 'Mật khẩu bạn đã nhập không chính xác.',
+  're-enter-passwd-wrong': 'Mật khẩu không trùng khớp',
+  'wrong-email-format': 'Email không đúng định dạng',
+  'pls-format-email': 'Vui lòng nhập đúng định dạng Email',
+  'pls-check-re-enter-pass': 'Vui lòng kiểm tra lại xác nhận mật khẩu mới',
+  'weak-passwd':
+    'Mật khẩu tối thiểu 8 ký tự, ít nhất 1 ký tự hoa, 1 ký tự viết thường,1 số và 1 ký tự đặc biệt',
+  'invalid-usr-name': 'Tên đăng nhập không thể chứa khoảng trắng',
+  'wrong-usrname-passwd': 'Tên đăng nhập hoặc mật khẩu không đúng',
+  'invalid-verify-code':
+    'Mã xác minh được cung cấp không hợp lệ, vui lòng thử lại',
+  'wrong-phone-lenght': 'Số điện thoại bắt buộc từ 8 đến 12 số',
+  'pls-input-order-methor': 'Vui lòng chọn hình thức thanh toán',
+  'pls-input-coupon': 'Vui lòng nhập mã giảm giá',
+  'should-login-to-buy': 'Bạn cần phải đăng nhập để có thể mua hàng',
+  'dont-have-delivery-addr': 'Bạn chưa có địa chỉ giao hàng ? ',
+  'pls-input-delivery-addr': 'Vui lòng thêm địa chỉ giao hàng',
+  'no-deli-addr': 'Không có địa chỉ',
+  'add-new-addr': '＋ Thêm địa chỉ mới',
+
+  // Success message
+  'support-request':'Gửi yêu cầu hỗ trợ thành công',
+  'send-message-success':'Gửi bình luận thành công',
+  'login-success': 'Đăng nhập thành công!',
+
+  // Profile
+  'customer-code': 'Mã khách hàng:',
+  'order-history': 'Lịch sử đơn hàng',
+  'delivery-addr': 'Địa chỉ giao hàng',
+  support: 'Trung tâm hỗ trợ',
+  about: 'Thông tin ứng dụng',
+  'sign-out': 'Đăng xuất',
+  'are-you-sure-logout': 'Bạn chắc chắn muốn đăng xuất tài khoản?',
+  'first-name': 'Tên',
+  'input-fname': 'Nhập tên',
+  'last-name': 'Họ',
+  'input-lname': 'Nhập họ',
+  phone: 'Số điện thoại',
+  'phone-numb': 'Nhập số điện thoại',
+  addr: 'Địa chỉ',
+  'input-addr': 'Nhập địa chỉ',
+  language: 'Ngôn ngữ',
+  'deactivate': 'Xoá tài khoản',
+  'delete-account': 'Bạn có chắc muốn xoá tài khoản này?',
+
+  // Notification
+  'func-under-dev': 'Chức năng đang được phát triển',
+
+  // Cart
+  cart: 'Giỏ hàng',
+  'delete-product': 'Bạn chắc chắn muốn xoá sản phẩm này?',
+  no: 'Không',
+  yes: 'Có',
+  ok: 'Đồng ý',
+  'continue-shopping': 'Tiếp tục mua hàng',
+  'empty-cart': 'Giỏ hàng trống',
+  'product-info': 'Thông tin sản phẩm',
+  edit: 'Sửa',
+  Edit: 'Chỉnh sửa',
+  all: 'Tất cả',
+  buy: 'Mua hàng',
+  weight: 'Khối lượng',
+  'add-delivery-addr': 'Thêm địa chỉ giao hàng ngay',
+  'order-info': 'Thông tin đơn hàng',
+  'payment-method': 'Hình thức thanh toán',
+  'order-note': 'Ghi chú cho đơn hàng',
+  'input-order-note':
+    'Nhập ghi chú (Vd: thời gian, hướng dẫn địa chỉ giao hàng chi tiết...)',
+  'order-success': 'Đặt hàng thành công',
+  'order-info-toolbar': 'Thông tin đặt hàng',
+  'not-login-yet': 'Bạn chưa đăng nhập? ',
+  'login-now': 'Nhấn vào đây để đăng nhập ngay',
+  'order-success-element': 'Đơn hàng của bạn đã đặt thành công',
+  'bacs':'Chuyển khoản ngân hàng',
+  'cod':'Trả tiền mặt khi nhận hàng',
+  order: 'Đặt hàng',
+  'wanna-del-addr': 'Bạn chắc chắn muốn xoá địa chỉ này?',
+  'addr-info-toolbar': 'Thông tin địa chỉ',
+  'del-addr': 'Xoá địa chỉ',
+  confirm: 'Xác nhận',
+
+  // HomePage
+  'search-product': 'Tìm kiếm sản phẩm',
+  'add-product-success': 'Thêm vào giỏ hàng thành công',
+  'today-deal': 'Ưu đãi hôm nay',
+  'new-product': 'Sản phẩm mới',
+  'read-more': 'Xem thêm',
+  'deli-recipe': 'Công thức món ngon',
+
+  // ProductPage
+  'no-review-yet': 'Chưa có đánh giá',
+  'rate-product': 'Vui lòng đánh giá số sao cho sản phẩm',
+  rate: 'Đánh giá',
+  'write-review': 'Viết đánh giá',
+  send: 'Gửi',
+  'to-send-review': ' để gửi đánh giá',
+  'relate-post': 'Bài viết liên quan',
+  'add-to-cart': 'Thêm vào giỏ hàng',
+  'buy-now': 'Mua ngay',
+  'there-no-product': 'Không có sản phẩm',
+  'search-info-for': 'Kết quả tìm kiếm cho',
+  'sort-desc': 'Mới nhất',
+  'sort-asc': 'Cũ nhất',
+
+  // Order
+  pending: 'Chờ thanh toán',
+  processing: 'Đang xử lý',
+  'on-hold': 'Tạm giữ',
+  completed: 'Đã hoàn thành',
+  cancelled: 'Đã hủy',
+  refunded: 'Đã hoàn tiền',
+  failed: 'Thất bại',
+  'N/A': 'Không xác định',
+  'order-status': 'Trạng thái đơn',
+  'o-date': 'Ngày đặt hàng',
+  'o-payment-method': 'Thanh toán',
+  'deli-info': 'Thông tin giao hàng',
+  'o-order': 'Đơn hàng',
+  repurchase: 'Mua lại',
+  'no-order': 'Không có đơn hàng',
+  product: 'sản phẩm',
+
+  // About
+  version: 'Phiên bản',
+  'com-name': 'Công ty Cổ phần Việt Rau',
+  'com-info': 'Thông tin công ty',
+  'com-name-detail': `- Tên tiếng Việt: Công ty cổ phần Việt Rau
+- Tên tiếng Anh: Viet Rau Joint Stock Company
+- Tên viết tắt: Viet Rau JSC`,
+  contact: 'Thông tin liên hệ',
+  'com-contact': `- Địa chỉ: Tổ 1, khu Láng Đế, xã Tân Hiệp, huyện Long Thành, Đồng Nai
+- Mã số thuế: 313983703
+- Website: www.vietrau.com
+- Mobile: (+84) 39776 4828
+- Telephone: (+84) 251 286 0828`,
+  'contact-help': 'Liên hệ hỗ trợ',
+  name: 'Họ tên',
+  'input-full-name': 'Nhập họ tên',
+  'need-help-head': 'Nội dụng',
+  'need-help': 'Bạn cần hỗ trợ gì?',
+  'send-request': 'Gửi yêu cầu',
+
+  // Edit Profile
+  'edit-profile-toolbar': 'Chỉnh sửa thông tin cá nhân',
+  'not-save-yet': 'Bạn chưa lưu thay đổi, bạn chắc chắn muốn thoát?',
+  'edit-success': 'Cập nhật thành công',
+  'avatar-fail': 'Cập nhật hình đại diện thất bại',
+  'add-mail-via-adm': 'Liên hệ admin để thêm email',
+  update: 'Cập nhật',
+
+  // Posts
+  'post-list': 'Danh sách bài viết',
+  'relate-product': 'Sản phẩm liên quan',
+  comment: 'Bình luận',
+  'w-cmt': 'Viết bình luận',
+  'to-send-cmt': ' để gửi bình luận',
+
+  // Component
+  quantity: 'Số lượng',
+  close: 'Đóng',
+  'apply-coupon': 'Áp dụng mã giảm giá',
+  'input-voucher': 'Nhập mã giảm giá',
+  apply: 'Áp dụng',
+
+  // Blank
+  '':'',
+}
