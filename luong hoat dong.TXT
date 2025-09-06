@@ -1,3 +1,6 @@
+adb logcat | findstr com.vietrau
+
+
 Bước 1: Start Metro bundler
 
 CLI sẽ chạy Metro bundler (server JS) để:

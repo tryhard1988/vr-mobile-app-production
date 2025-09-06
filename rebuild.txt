@@ -21,12 +21,13 @@ npm install
 
 :: Start Metro server in a new window
 echo Starting Metro server in a new window...
-start cmd /k "npx react-native start --reset-cache"
+npx react-native start --reset-cache
 
 :: Clean Android build
 echo Cleaning Android build...
 cd android
 gradlew clean
+gradlew assembleDebug
 cd ..
 
 :: Chạy lại ứng dụng Android
