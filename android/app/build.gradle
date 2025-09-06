@@ -81,6 +81,10 @@ import com.android.build.OutputFile
 ext {
     hermesEnabled = project.hasProperty('enableHermes') ? project.enableHermes : false
 }
+ext {
+    FLIPPER_VERSION = "0.54.0"  // theo RN 0.63
+    frescoVersion = "2.5.0"     // phiên bản còn tồn tại trên Maven
+}
 
 project.ext.react = [
     enableHermes: false,  // clean and rebuild if changing
@@ -205,17 +209,22 @@ dependencies {
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
-      exclude group:'com.facebook.fbjni'
-    }
+    exclude group:'com.facebook.fbjni'
+}
 
-    debugImplementation("com.facebook.flipper:flipper-network-plugin:${FLIPPER_VERSION}") {
-        exclude group:'com.facebook.flipper'
-        exclude group:'com.squareup.okhttp3', module:'okhttp'
-    }
+debugImplementation("com.facebook.flipper:flipper-network-plugin:${FLIPPER_VERSION}") {
+    exclude group:'com.facebook.flipper'
+    exclude group:'com.squareup.okhttp3', module:'okhttp'
+}
 
-    debugImplementation("com.facebook.flipper:flipper-fresco-plugin:${FLIPPER_VERSION}") {
-        exclude group:'com.facebook.flipper'
-    }
+debugImplementation("com.facebook.flipper:flipper-fresco-plugin:${FLIPPER_VERSION}") {
+    exclude group:'com.facebook.flipper'
+    // thêm line này để tránh Fresco lỗi
+    exclude group:'com.facebook.fresco'
+}
+
+	implementation "com.facebook.fresco:fresco:$frescoVersion"
+	implementation "com.facebook.fresco:imagepipeline:$frescoVersion"
 
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";
@@ -233,4 +242,5 @@ task copyDownloadableDepsToLibs(type: Copy) {
     into 'libs'
 }
 
-apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+//apply from: "../../node_modules/react-native/cli-platform-android/native_modules.gradle"
+//applyNativeModulesAppBuildGradle(project)

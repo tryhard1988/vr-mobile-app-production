@@ -1,0 +1,39 @@
+@echo off
+echo ================================
+echo Cleaning project and reinstalling dependencies
+echo ================================
+
+:: Xóa node_modules
+echo Deleting node_modules...
+rd /s /q node_modules
+
+:: Xóa package-lock.json
+echo Deleting package-lock.json...
+del package-lock.json
+
+:: Clean npm cache
+echo Cleaning npm cache...
+npm cache clean --force
+
+:: Cài lại dependencies
+echo Installing npm dependencies...
+npm install
+
+:: Start Metro server in a new window
+echo Starting Metro server in a new window...
+start cmd /k "npx react-native start --reset-cache"
+
+:: Clean Android build
+echo Cleaning Android build...
+cd android
+gradlew clean
+cd ..
+
+:: Chạy lại ứng dụng Android
+echo Running Android app...
+npx react-native run-android
+
+echo ================================
+echo Done!
+echo ================================
+pause
