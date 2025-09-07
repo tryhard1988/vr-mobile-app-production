@@ -1,44 +1,26 @@
 {
   "project_info": {
-    "project_number": "51300635488",
-    "project_id": "vietrauappnoitification",
-    "storage_bucket": "vietrauappnoitification.appspot.com"
+    "project_number": "433155045005",
+    "project_id": "vietrau-4ca2c",
+    "storage_bucket": "vietrau-4ca2c.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:51300635488:android:ae7a2020e2376df8318405",
+        "mobilesdk_app_id": "1:433155045005:android:7755b3c08de4bd2310d4c4",
         "android_client_info": {
           "package_name": "com.vietrau"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "51300635488-nrsaqe9i2o6dlhf0cdehbmpiakf447u5.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBCf3Fx7zSbQ9BWXQE7HLyljasTcsZsCwI"
+          "current_key": "AIzaSyDmiPpBzCDeCxOUOSLpsntOdJb-9W93yqk"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "51300635488-nrsaqe9i2o6dlhf0cdehbmpiakf447u5.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "51300635488-fsbno6h4tla5ovuuhsrokbdigcmg8k0e.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.vietrau.VietRau",
-                "app_store_id": "202104221748"
-              }
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

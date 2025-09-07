@@ -7,6 +7,7 @@ project.ext.react = [
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
+apply plugin: 'com.google.gms.google-services'
 
 def enableSeparateBuildPerCPUArchitecture = false
 def enableProguardInReleaseBuilds = false
@@ -68,4 +69,7 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+
+    implementation platform('com.google.firebase:firebase-bom:31.2.2')  // <-- Firebase BOM
+    implementation 'com.google.firebase:firebase-messaging'
 }
