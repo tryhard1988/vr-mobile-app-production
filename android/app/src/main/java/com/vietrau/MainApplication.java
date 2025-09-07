@@ -16,51 +16,51 @@ import java.util.List;
 
 public class MainApplication extends Application implements ReactApplication {
 
-    private final ReactNativeHost mReactNativeHost =
-        new ReactNativeHost(this) {
-            @Override
-            public boolean getUseDeveloperSupport() {
-                return BuildConfig.DEBUG;
-            }
-
-            @Override
-            protected List<ReactPackage> getPackages() {
-                return Arrays.<ReactPackage>asList(
-                        new MainReactPackage()
-                        // TODO: Nếu muốn thêm package khác, thêm ở đây, ví dụ:
-                        // new RNCameraPackage(),
-                        // new RNPermissionsPackage()
-                );
-            }
-
-            @Override
-            protected String getJSMainModuleName() {
-                return "index";
-            }
-        };
-
-    @Override
-    public ReactNativeHost getReactNativeHost() {
-        return mReactNativeHost;
-    }
-
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        SoLoader.init(this, /* native exopackage */ false);
-        initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
-    }
-
-    private static void initializeFlipper(Context context, ReactInstanceManager reactInstanceManager) {
-        if (BuildConfig.DEBUG) {
-            try {
-                Class<?> aClass = Class.forName("com.vietrau.ReactNativeFlipper");
-                aClass.getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
-                      .invoke(null, context, reactInstanceManager);
-            } catch (ClassNotFoundException | NoSuchMethodException |
-                     IllegalAccessException | InvocationTargetException e) {
-                e.printStackTrace();
-            }
+  private final ReactNativeHost mReactNativeHost =
+      new ReactNativeHost(this) {
+        @Override
+        public boolean getUseDeveloperSupport() {
+          return BuildConfig.DEBUG;
         }
+
+        @Override
+        protected List<ReactPackage> getPackages() {
+          return Arrays.<ReactPackage>asList(
+              new MainReactPackage()
+              // Các package khác sẽ autolink, không cần thêm tay ở đây
+          );
+        }
+
+        @Override
+        protected String getJSMainModuleName() {
+          return "index";
+        }
+      };
+
+  @Override
+  public ReactNativeHost getReactNativeHost() {
+    return mReactNativeHost;
+  }
+
+  @Override
+  public void onCreate() {
+    super.onCreate();
+    SoLoader.init(this, /* native exopackage */ false);
+    initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
+  }
+
+  private static void initializeFlipper(
+      Context context, ReactInstanceManager reactInstanceManager) {
+    if (BuildConfig.DEBUG) {
+      try {
+        Class<?> aClass = Class.forName("com.vietrau.ReactNativeFlipper");
+        aClass
+            .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
+            .invoke(null, context, reactInstanceManager);
+      } catch (ClassNotFoundException | NoSuchMethodException |
+               IllegalAccessException | InvocationTargetException e) {
+        e.printStackTrace();
+      }
     }
+  }
 }

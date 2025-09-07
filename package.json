@@ -12,16 +12,21 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "^1.17.6",
-    "@react-native-community/datetimepicker": "^3.4.0",
-    "@react-native-community/hooks": "^2.6.0",
-    "@react-native-community/masked-view": "^0.1.10",
+    "react": "16.13.1",
+    "react-native": "0.63.4",
+
     "@react-native-community/netinfo": "^5.9.10",
     "@react-native-firebase/app": "^11.0.0",
     "@react-native-firebase/messaging": "^11.0.0",
     "@react-navigation/material-top-tabs": "^5.3.13",
     "@react-navigation/native": "^5.9.2",
     "@react-navigation/stack": "^5.14.2",
+
+    "@react-native-async-storage/async-storage": "^1.17.6",
+    "@react-native-community/datetimepicker": "^3.4.0",
+    "@react-native-community/hooks": "^2.6.0",
+    "@react-native-community/masked-view": "^0.1.10",
+
     "amazon-cognito-identity-js": "^4.5.12",
     "aws-amplify": "^3.3.25",
     "aws-amplify-react-native": "^4.3.2",
@@ -29,8 +34,7 @@
     "axios": "^0.21.1",
     "i18n-js": "^3.8.0",
     "moment": "^2.29.1",
-    "react": "16.13.1",
-    "react-native": "0.63.4",
+
     "react-native-camera": "3.44.3",
     "react-native-dropdownalert": "^4.3.0",
     "react-native-gesture-handler": "^1.9.0",
@@ -40,10 +44,11 @@
     "react-native-localize": "^2.0.1",
     "react-native-modal-datetime-picker": "^9.2.0",
     "react-native-offline": "^5.7.0",
+
     "react-native-permissions": "^3.0.1",
     "react-native-popup-menu": "^0.15.10",
     "react-native-qrcode-scanner": "^1.5.3",
-    "react-native-reanimated": "^2.14.4",
+    "react-native-reanimated": "^1.13.2",
     "react-native-render-html": "^5.1.0",
     "react-native-safe-area-context": "^3.1.9",
     "react-native-screens": "^2.17.0",
@@ -52,7 +57,6 @@
     "react-native-tab-view": "^2.15.2",
     "react-native-vector-icons": "^8.0.0",
     "react-native-woocommerce-api": "^1.8.8",
-    "react-native-worklets": "^0.4.0",
     "react-redux": "^7.2.2",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"
@@ -60,7 +64,6 @@
   "devDependencies": {
     "@babel/core": "^7.13.8",
     "@babel/runtime": "^7.13.9",
-    "@react-native-community/cli": "^4.14.0",
     "@react-native-community/eslint-config": "^2.0.0",
     "babel-jest": "^26.6.3",
     "eslint": "^7.21.0",
