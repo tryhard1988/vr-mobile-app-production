@@ -15,12 +15,12 @@ def jscFlavor = 'org.webkit:android-jsc:+'
 def enableHermes = project.ext.react.get("enableHermes", false)
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
+    compileSdkVersion 33   // update từ 30 lên 33
 
     defaultConfig {
         applicationId "com.vietrau"
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
+        minSdkVersion 21
+        targetSdkVersion 33   // update từ 30 lên 33
         versionCode 1
         versionName "1.0"
     }
@@ -60,16 +60,12 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation "com.facebook.react:react-native:+"  // React Native
-    if (enableHermes) {
-        def hermesPath = "../../node_modules/hermes-engine/android/"
-        debugImplementation files(hermesPath + "hermes-debug.aar")
-        releaseImplementation files(hermesPath + "hermes-release.aar")
-    } else {
+    implementation "com.facebook.react:react-native:0.63.4"  // <-- bắt buộc cho RN 0.63
+    implementation platform('com.google.firebase:firebase-bom:31.2.2')
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+
+    if (!enableHermes) {
         implementation jscFlavor
     }
-
-    implementation platform('com.google.firebase:firebase-bom:31.2.2')  // <-- Firebase BOM
-    implementation 'com.google.firebase:firebase-messaging'
 }

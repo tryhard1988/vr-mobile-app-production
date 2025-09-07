@@ -2,17 +2,16 @@ package com.vietrau;
 
 import android.app.Application;
 import android.content.Context;
-
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
-
 import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 import java.util.List;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -25,12 +24,9 @@ public class MainApplication extends Application implements ReactApplication {
 
         @Override
         protected List<ReactPackage> getPackages() {
-          // RN 0.63: thêm thủ công các package bạn cần
-          return Arrays.<ReactPackage>asList(
-              new MainReactPackage()
-              // Firebase app package auto-linked với RN >=0.60
-              // Thường không cần thêm dòng này, để tránh lỗi
-          );
+            return Arrays.<ReactPackage>asList(
+                new MainReactPackage()
+            );
         }
 
         @Override
@@ -49,6 +45,9 @@ public class MainApplication extends Application implements ReactApplication {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
+
+    //com.google.firebase.FirebaseApp.initializeApp(this);
+    FirebaseMessaging.getInstance();
   }
 
   private static void initializeFlipper(
