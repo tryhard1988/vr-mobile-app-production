@@ -25,9 +25,11 @@ public class MainApplication extends Application implements ReactApplication {
 
         @Override
         protected List<ReactPackage> getPackages() {
+          // RN 0.63: thêm thủ công các package bạn cần
           return Arrays.<ReactPackage>asList(
               new MainReactPackage()
-              // Các package khác sẽ autolink, không cần thêm tay ở đây
+              // Firebase app package auto-linked với RN >=0.60
+              // Thường không cần thêm dòng này, để tránh lỗi
           );
         }
 
